@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import StartPage from "../StartPage";
+import StartPage from "./StartPage";
 import Todo from "./Todo";
 
 export enum RoutesList {

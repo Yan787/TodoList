@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    background-color: rgba(167, 167, 167, 0.434);
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.425);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+
+    &:hover {
+        svg>path {
+            fill: rgb(0, 31, 188);
+        }
+    }
+}
+
+.activeButton {
+    svg>path {
+        fill: rgb(40, 40, 40);
+    }
+}

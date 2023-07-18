@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import { TrashCan } from "../assets/icons";
-import { ITask } from "../utils/@globalTypes";
+import { TrashCan } from "../../assets/icons";
+import { ITask } from "../../utils/@globalTypes";
 import styles from "./TodoTask.module.scss";
 
 type TodoTaskProps = {

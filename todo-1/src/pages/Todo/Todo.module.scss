@@ -1,11 +1,26 @@
+.logo {
+    left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    top: 5px;
+    font-family: cursive;
+}
+
+.switcher {
+    position: absolute;
+    left: 15px;
+    top: 45px;
+}
 .mainInfo {
     flex: 1;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 200px;
+        padding-right: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 50px;
+    padding-top: 50px;
 
     .continue {
         display: flex;
@@ -70,7 +85,7 @@
             }
 
             &:active {
-                background-color: #2f599e !important;
+                background-color: #2f599e;
             }
 
             &:focus-visible {
@@ -93,6 +108,7 @@
         overflow: scroll;
         box-shadow: 0px 0px 4px 5px rgb(231, 231, 231);
         padding: 0 3px;
+        margin-bottom: 43px;
     }
 
 }
@@ -103,6 +119,87 @@
 
 }
 
+.logoDark {
+    color: white;
+}
 .available:hover {
     cursor: not-allowed;
+}
+.mainInfoDark {
+    background-color: #112d86;
+}
+
+.continueDark {
+    background: #75757585 !important;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.5607843137) !important;
+}
+
+.todoCardsDark {
+    background-color: #02024c70 !important;
+    box-shadow: 0px 0px 4px 5px #02024c70 !important;
+}
+
+.deadlineDark {
+    background: rgb(255 255 255 / 55%) !important;
+}
+
+.btnDark {
+    &:hover {
+        background-color: #4fa050 !important;
+        box-shadow: 0 2px #18752d !important;
+    }
+
+    &:active {
+        background-color: #4adf4d !important;
+    }
+}
+
+@media screen and (max-width: 753px) {
+    .mainInfo {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .switcher {
+        left: 6px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .logo {
+        top: 10px;
+    }
+
+    .switcher {
+        left: 130.2px;
+        top: 9px;
+    }
+
+    .mainInfo {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 85px;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .continue {
+        padding: 10px !important;
+    }
+
+    .addText {
+        height: 30px !important;
+        font-size: 12px;
+    }
+
+    .deadline {
+        height: 30px !important;
+        font-size: 12px;
+    }
+
+    .btn {
+        height: 30px !important;
+        font-size: 12px !important;
+        margin: 11px 0 0 0 !important;
+    }
 }

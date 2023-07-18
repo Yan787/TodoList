@@ -1,7 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage' 
-import todoReducer from './reducers/todoSlice'
+import todoReducer from './reducers/themeSlice'
 import persistStore from "redux-persist/es/persistStore";
 
 const rootReducer = combineReducers({
